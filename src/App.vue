@@ -3,28 +3,52 @@ import HelloWorld from './components/HelloWorld.vue'
 </script>
 
 <template>
-  <div>
-    <a href="https://vitejs.dev" target="_blank">
-      <img src="/vite.svg" class="logo" alt="Vite logo" />
-    </a>
-    <a href="https://vuejs.org/" target="_blank">
-      <img src="./assets/vue.svg" class="logo vue" alt="Vue logo" />
-    </a>
+  <div class="contaiter">
+    <div class="one">
+      <img src="./assets/img/indexBtn.png" alt="主页按钮" class="img">
+      <img src="./assets/img/one/btnA.png" alt="A" class="imgA">
+      <img src="./assets/img/one/btnB.png" alt="B" class="imgB">
+      <img src="./assets/img/one/btnC.png" alt="C" class="imgC">
+      <img src="./assets/img/one/btnD.png" alt="D" class="imgD">
+    </div>
   </div>
-  <HelloWorld msg="Vite + Vue" />
+  <!-- <div class="contaiter">
+    <img src="./assets/img/Frame10.png" alt="背景图片">
+  </div>
+  <div class="contaiter">
+    <img src="./assets/img/Frame11.png" alt="背景图片">
+  </div> -->
 </template>
 
 <style scoped>
-.logo {
-  height: 6em;
-  padding: 1.5em;
-  will-change: filter;
-  transition: filter 300ms;
+.contaiter {
+  background: #000000;
+  border-radius: 0px 0px 0px 0px;
+  opacity: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
-.logo:hover {
-  filter: drop-shadow(0 0 2em #646cffaa);
-}
-.logo.vue:hover {
-  filter: drop-shadow(0 0 2em #42b883aa);
+.one {
+  width: 1920px;
+  height: 1080px;
+  background: url('./assets/img/one/box.png') center no-repeat;
+  background-size: 1802.43px 973.42px;
+  .img {
+    margin-top: 146px;
+    margin-left: 172px;
+  }
+  .imgA {
+
+  }
+  .imgB {
+    
+  }
+  .imgC {
+    
+  }
+  .imgD {
+    
+  }
 }
 </style>
