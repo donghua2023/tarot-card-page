@@ -1,0 +1,29 @@
+.four {
+  width: 1920px;
+  height: 100vh;
+  /* background: url('../img/three/boxBg.png') left 104px top 40px no-repeat; */
+  /* background-size: 1712px 710px; */
+
+  .fourFlag {
+    .leftFlag {
+      position: relative;
+      left: 160px;
+      height: 48px;
+      width: 48px;
+    }
+
+    .text {
+      width: 167.61px;
+      height: 50.02px;
+      margin-left: 200px;
+    }
+  }
+
+  .fourSlide {
+    .slide {
+      position: relative;
+      left: 196px;
+      bottom: 240px;
+    }
+  }
+}

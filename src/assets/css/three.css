@@ -1,0 +1,45 @@
+.three {
+  width: 1920px;
+  height: 100vh;
+  /* background: url('../img/three/boxBg.png') left 104px top 40px no-repeat; */
+  /* background-size: 1712px 710px; */
+
+  .cardBox {
+    display: flex;
+    position: relative;
+    justify-content: space-around;
+    top: 280px;
+    width: 1700px;
+    margin: 0 auto;
+
+    .cardItem {
+      width: 253px;
+      height: 325px;
+      background: #828282;
+      border-radius: 11px 11px 11px 11px;
+      opacity: 1;
+    }
+  }
+
+  .img {
+    width: 1712px;
+    height: 34px;
+    display: block;
+    margin: 0 auto;
+    position: relative;
+    top: 350px;
+  }
+
+  .bottomBtn {
+    display: flex;
+    width: 1000px;
+    margin: 0 auto;
+    margin-top: 30px;
+    justify-content: space-around;
+
+    .img {
+      width: 172.65px;
+      height: 50.29px;
+    }
+  }
+}

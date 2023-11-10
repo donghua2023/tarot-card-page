@@ -1,0 +1,35 @@
+.one {
+  width: 1920px;
+  height: 100vh;
+  background: url('../img/one/box.png') center no-repeat;
+  background-size: 1802.43px 973.42px;
+
+  .img {
+    margin-top: 146px;
+    margin-left: 172px;
+  }
+
+  .imgA {
+    position: absolute;
+    left: 1326px;
+    top: 322px;
+  }
+
+  .imgB {
+    position: absolute;
+    left: 1326px;
+    top: 476.51px;
+  }
+
+  .imgC {
+    position: absolute;
+    left: 1326px;
+    top: 615.83px;
+  }
+
+  .imgD {
+    position: absolute;
+    left: 1326px;
+    top: 754.76px;
+  }
+}

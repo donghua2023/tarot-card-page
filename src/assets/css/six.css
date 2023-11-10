@@ -1,0 +1,41 @@
+.six {
+  width: 1920px;
+  height: 100vh;
+
+  .box {
+    position: relative;
+    top: 100px;
+    width: 1800px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-around;
+
+    .item {
+      display: flex;
+      flex-direction: column;
+      width: 465px;
+
+      .num {
+        width: 51px;
+        height: 34px;
+        display: block;
+        margin: 0 auto;
+        margin-bottom: 20px;
+      }
+
+      .pic {
+        width: 465px;
+        height: 596px;
+        background: #828282;
+        border-radius: 26px 26px 26px 26px;
+        opacity: 1;
+        margin-bottom: 20px;
+      }
+
+      .text {
+        width: 431px;
+        height: 81px;
+      }
+    }
+  }
+}
