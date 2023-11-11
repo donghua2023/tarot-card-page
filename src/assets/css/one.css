@@ -5,30 +5,40 @@
   background-size: 1802.43px 973.42px;
 
   .img {
+    width: 222px;
+    height: 72px;
     margin-top: 146px;
     margin-left: 172px;
   }
 
   .imgA {
     position: absolute;
+    width: 221.34px;
+    height: 85.51px;
     left: 1326px;
     top: 322px;
   }
 
   .imgB {
     position: absolute;
+    width: 335.68px;
+    height: 59.33px;
     left: 1326px;
     top: 476.51px;
   }
 
   .imgC {
     position: absolute;
+    width: 357.58px;
+    height: 64.93px;
     left: 1326px;
     top: 615.83px;
   }
 
   .imgD {
     position: absolute;
+    width: 231.55px;
+    height: 65.64px;
     left: 1326px;
     top: 754.76px;
   }
