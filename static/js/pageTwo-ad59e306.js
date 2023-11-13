@@ -1,1 +1,0 @@
-import{n as e}from"./navBar-c7c4f4da.js";import{_,o,c as s,f as t}from"./index-7fdfb7f9.js";import"./navBar-d5fe2082.js";const a={class:"two"},c={__name:"pageTwo",setup(n){return(r,p)=>(o(),s("div",a,[t(e,{isShow:!1})]))}},i=_(c,[["__scopeId","data-v-77ef2a35"]]);export{i as default};
