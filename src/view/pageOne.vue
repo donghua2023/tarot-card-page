@@ -43,7 +43,7 @@ function getImageUrl(name) {
   width: 1920px;
   height: 100vh;
   background: url('@/assets/img/one/box.png') center no-repeat;
-  background-size: 1802.43px 973.42px;
+  background-size: 1800.43px 900px;
 
   .img {
     width: 222px;

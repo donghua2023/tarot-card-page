@@ -28,7 +28,9 @@ defineProps({
 
 const route = useRoute()
 const router = useRouter()
+
 const navBarStore = useNavBarStore()
+navBarStore.reloadIsActive(route.path)
 const { isActive } = storeToRefs(navBarStore)
 const highlightLeft = ref(0)
 const isLightShow = ref(false)

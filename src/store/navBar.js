@@ -5,7 +5,9 @@ const useNavBarStore = defineStore("navBar", {
       isActive: '/pageOne'
     }),
     actions: {
-        
+      reloadIsActive(path) {
+        this.isActive = path
+      }
     }
 });
 export default useNavBarStore;
