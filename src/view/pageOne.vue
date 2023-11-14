@@ -2,10 +2,10 @@
   <div class="container">
     <div class="one">
       <img src="@/assets/img/indexBtn.png" alt="主页按钮" class="img">
-      <img :src="isActive === '/pageOne' ? getImageUrl('btnA') : getImageUrl('btnA')" alt="A" class="imgA" @click="imgClick('/pageOne')">
-      <img :src="isActive === '/pageTwo' ? getImageUrl('btnB') : getImageUrl('btnB')" alt="B" class="imgB" @click="imgClick('/pageTwo')">
-      <img :src="isActive === '/pageThree' ? getImageUrl('btnC') : getImageUrl('btnC')" alt="C" class="imgC" @click="imgClick('/pageThree')">
-      <img :src="isActive === '/pageFour' ? getImageUrl('btnD') : getImageUrl('btnD')" alt="D" class="imgD" @click="imgClick('/pageFour')">
+      <img :src="isActive === '/pageOne' ? getImageUrl('btnA') : getImageUrl('btnA')" alt="A" class="imgA" @click="imgClick('/info')">
+      <img :src="isActive === '/pageTwo' ? getImageUrl('btnB') : getImageUrl('btnB')" alt="B" class="imgB" @click="imgClick('/character')">
+      <img :src="isActive === '/pageThree' ? getImageUrl('btnC') : getImageUrl('btnC')" alt="C" class="imgC" @click="imgClick('/naviative')">
+      <img :src="isActive === '/pageFour' ? getImageUrl('btnD') : getImageUrl('btnD')" alt="D" class="imgD" @click="imgClick('/team')">
     </div>
   </div>
 </template>
@@ -59,6 +59,10 @@ function getImageUrl(name) {
     left: 1326px;
     top: 322px;
     transition: filter 0.3s; /* 添加过渡效果 */
+  }
+
+  .imgA:hover {
+    filter: brightness(250%); /* 改变亮度或其他样式以达到高亮效果 */
   }
 
   .imgB {

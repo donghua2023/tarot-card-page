@@ -5,11 +5,11 @@
     </div>
     <div class="navLeft" v-if = '!isShow'></div>
     <div class="nav"  @mousemove.stop="onMouseMove" @mouseleave.stop="onMouseLeave">
-      <img :src="isActive !== '/pageOne' ? getImageUrl('one') : getImageUrl('one_active')" alt="none" class="none" @click="imgClick('/pageOne')">
-      <img :src="isActive !== '/pageTwo' ? getImageUrl('two') : getImageUrl('two_active')" alt="ntwo" class="ntwo" @click="imgClick('/pageTwo')">
-      <img :src="isActive !== '/pageThree' ? getImageUrl('three') : getImageUrl('three_active')" alt="nthree" class="nthree" @click="imgClick('/pageThree')">
-      <img :src="isActive !== '/pageFour' ? getImageUrl('four') : getImageUrl('four_active')" alt="nfour" class="nfour" @click="imgClick('/pageFour')">
-      <div class="highlight" :style="{ left: highlightLeft + 'px', width: capsuleW + 'px' }" v-show="isLightShow"></div>
+      <img :src="isActive !== '/info' ? getImageUrl('one') : getImageUrl('one_active')" alt="none" class="none" @click="imgClick('/info')">
+      <img :src="isActive !== '/character' ? getImageUrl('two') : getImageUrl('two_active')" alt="ntwo" class="ntwo" @click="imgClick('/character')">
+      <img :src="isActive !== '/naviative' ? getImageUrl('three') : getImageUrl('three_active')" alt="nthree" class="nthree" @click="imgClick('/naviative')">
+      <img :src="isActive !== '/team' ? getImageUrl('four') : getImageUrl('four_active')" alt="nfour" class="nfour" @click="imgClick('/team')">
+      <!-- <div class="highlight" :style="{ left: highlightLeft + 'px', width: capsuleW + 'px' }" v-show="isLightShow"></div> -->
     </div>
   </div>
 </template>
@@ -99,6 +99,18 @@ function getImageUrl(name) {
     width: 92.77px;
     height: 53.71px;
     z-index: 9999;
+  }
+  .none:hover {
+    filter: brightness(250%); /* 改变亮度或其他样式以达到高亮效果 */
+  }
+  .ntwo:hover {
+    filter: brightness(250%); /* 改变亮度或其他样式以达到高亮效果 */
+  }
+  .nthree:hover {
+    filter: brightness(250%); /* 改变亮度或其他样式以达到高亮效果 */
+  }
+  .nfour:hover {
+    filter: brightness(250%); /* 改变亮度或其他样式以达到高亮效果 */
   }
   .ntwo {
     width: 165.19px;

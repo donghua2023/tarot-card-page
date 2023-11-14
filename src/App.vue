@@ -38,7 +38,6 @@
 
 
 <style src="./assets/css/five.css"></style>
-<style src="./assets/css/six.css"></style>
 <style scoped>
 
 </style>

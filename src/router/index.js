@@ -3,24 +3,29 @@ import { createRouter, createWebHashHistory } from "vue-router";
 const routes = [
   {
     path: "/",
-    redirect: "pageOne"
+    redirect: "index"
   },
   {
-    path: "/pageOne",
-    name: 'pageOne',
+    path: "/index",
+    name: 'index',
     component: () => import("../view/pageOne.vue")
   },
   {
-    path: "/pageTwo",
-    component: () => import("../view/pageTwo.vue")
+    path: "/info",
+    name: 'info',
+    component: () => import("../view/pagetwo.vue")
   },
   {
-    path: "/pageThree",
+    path: "/character",
+    component: () => import("../view/character.vue")
+  },
+  {
+    path: "/naviative",
     name: "main",
-    component: () => import("../view/pageThree.vue")
+    component: () => import("../view/pagethree.vue")
   },
   {
-    path: "/pageFour",
+    path: "/team",
     component: () => import("../view/pageFour.vue")
   }
 ];
