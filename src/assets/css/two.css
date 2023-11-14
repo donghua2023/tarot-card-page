@@ -1,6 +1,6 @@
 .two {
   width: 1920px;
   height: 100vh;
-  background: url('../img/two/boxBg.png') left 96px top 10px no-repeat;
-  background-size: 1493px 900px;
+  background: url('../img/two/boxBg.png') left 96px top 60px no-repeat;
+  background-size: 1493px 850px;
 }

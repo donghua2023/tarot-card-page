@@ -1,7 +1,7 @@
 <template>
   <div class="navBar">
     <div class="navLeft" v-if = 'isShow'>
-      <img src="@/assets/img/Navigation-bar/left.png" alt="none" class="none">
+      <img src="@/assets/img/Navigation-bar/left.png" alt="none" class="none" @click="letfClick">
     </div>
     <div class="navLeft" v-if = '!isShow'></div>
     <div class="nav"  @mousemove.stop="onMouseMove" @mouseleave.stop="onMouseLeave">
@@ -40,6 +40,9 @@ const imgClick = (value) =>  {
   if(route.path === value) return
   isActive.value = value
   router.push(value)
+}
+const letfClick = () => {
+  router.push('/index')
 }
 
 const onMouseMove = (event) => {
