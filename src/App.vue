@@ -46,7 +46,7 @@
 .scale-slide-enter-active,
 .scale-slide-leave-active {
   position: absolute;
-  transition: all 0.85s ease;
+  transition: all 1s ease;
 }
 
 .scale-slide-enter-from {
