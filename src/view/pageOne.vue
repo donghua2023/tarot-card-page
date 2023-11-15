@@ -31,8 +31,12 @@ function getImageUrl(name) {
 </script>
 
 <style scoped>
-.contaiter {
-  background-color: #000000!important;
+.container {
+  width: 1920px;
+  height: 100vh;
+  background: url('@/assets/img/bigBg.png') center no-repeat;
+  background-size: 100% 100vh;
+  /* background-color: #000000!important; */
   border-radius: 0px 0px 0px 0px;
   opacity: 1;
   display: flex;
