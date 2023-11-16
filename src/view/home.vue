@@ -8,7 +8,9 @@
 <script setup>
 import {ref} from 'vue'
 const butterflyRef = ref();
+
 import { useRouter } from 'vue-router';
+
 const flapWings = () => {
   const butterfly = document.querySelector('.img');
   butterfly.style.transform = 'scaleX(-1)';
@@ -27,6 +29,7 @@ const imgClick = () => {
   router.push('/index')
 }
 
+
 </script>
 
 <style scoped>
@@ -35,7 +38,7 @@ const imgClick = () => {
   height: 100vh;
   background: url('@/assets/img/one/bigBg.png') center no-repeat;
   background-size: 100% 100vh;
-  /* background-color: #000000!important; */
+  background-color: #000000!important;
   border-radius: 0px 0px 0px 0px;
   opacity: 1;
   display: flex;
