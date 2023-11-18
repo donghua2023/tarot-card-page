@@ -5,7 +5,7 @@
       <img :src="isActive === '/pageOne' ? getImageUrl('btnA') : getImageUrl('btnA')" alt="A" class="imgA" @click="imgClick('/info')">
       <img :src="isActive === '/pageTwo' ? getImageUrl('btnB') : getImageUrl('btnB')" alt="B" class="imgB" @click="imgClick('/character')">
       <img :src="isActive === '/pageThree' ? getImageUrl('btnC') : getImageUrl('btnC')" alt="C" class="imgC" @click="imgClick('/naviative')">
-      <img :src="isActive === '/pageFour' ? getImageUrl('btnD') : getImageUrl('btnD')" alt="D" class="imgD" @click="imgClick('/team')">
+      <img :src="isActive === '/pageFour' ? getImageUrl('btnD') : getImageUrl('btnD')" alt="D" class="imgD">
     </div>
   </div>
 </template>

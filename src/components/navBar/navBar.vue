@@ -8,7 +8,7 @@
       <img :src="isActive !== '/info' ? getImageUrl('one') : getImageUrl('one_active')" alt="none" class="none" @click="imgClick('/info')">
       <img :src="isActive !== '/character' ? getImageUrl('two') : getImageUrl('two_active')" alt="ntwo" class="ntwo" @click="imgClick('/character')">
       <img :src="isActive !== '/naviative' ? getImageUrl('three') : getImageUrl('three_active')" alt="nthree" class="nthree" @click="imgClick('/naviative')">
-      <img :src="isActive !== '/team' ? getImageUrl('four') : getImageUrl('four_active')" alt="nfour" class="nfour" @click="imgClick('/team')">
+      <img :src="isActive !== '/card' ? getImageUrl('four') : getImageUrl('four_active')" alt="nfour" class="nfour">
       <!-- <div class="highlight" :style="{ left: highlightLeft + 'px', width: capsuleW + 'px' }" v-show="isLightShow"></div> -->
     </div>
   </div>
