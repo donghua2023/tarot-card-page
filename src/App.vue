@@ -4,7 +4,7 @@
 
 <template>
   <router-view  v-slot="{ Component }">
-    <transition name="scale-slide" mode="out-in">
+    <transition name="fade" mode="out-in">
       <component :is="Component" />
     </transition>
   </router-view>
@@ -37,13 +37,9 @@
   </div> -->
 </template>
 
-
-
-
-
 <style src="./assets/css/five.css"></style>
 <style scoped>
-.scale-slide-enter-active,
+/* .scale-slide-enter-active,
 .scale-slide-leave-active {
   position: absolute;
   transition: all 1s ease;
@@ -63,6 +59,12 @@
 
 .scale-slide-leave-to {
   transform: scale(1.1);
-}
+} */
 
+.fade-enter-active, .fade-leave-active {
+  transition: opacity 0.5s;
+}
+.fade-enter, .fade-leave-to /* .fade-leave-active 在 Vue < 2.2.8 */ {
+  opacity: 0;
+}
 </style>
