@@ -62,7 +62,7 @@
 }
 
 .scale-slide-leave-to {
-  transform: scale(0.8);
+  transform: scale(1.1);
 }
 
 </style>

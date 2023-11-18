@@ -19,11 +19,18 @@
     }
   }
 
+  .fourFlag:hover {
+    cursor: pointer;
+  }
+
   .fourSlide {
     .slide {
-      position: relative;
+      width: 496px;
+      height: 11px;
+      position: absolute;
       left: 196px;
-      bottom: 240px;
+      top: 320px;
+      /* margin-bottom: 50px; */
     }
   }
 }

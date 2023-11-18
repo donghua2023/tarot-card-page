@@ -34,4 +34,7 @@ export default defineConfig({
     }
   },
   plugins: [vue()],
+  server: {
+    hmr: true
+  }
 })

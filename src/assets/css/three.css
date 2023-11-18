@@ -1,23 +1,87 @@
 .three {
   width: 1920px;
   height: 100vh;
-  /* background: url('../img/three/boxBg.png') left 104px top 40px no-repeat; */
-  /* background-size: 1712px 710px; */
+
+  .content {
+    width: 1920px;
+    display: flex;
+    height: 400px;
+    justify-content: center;
+    align-items: center;
+    box-sizing: border-box;
+
+    .fuhao {
+      width: 50px;
+      height: 50px;
+      font-size: 50px;
+      border-radius: 40%;
+      /* background-color: lightgray; */
+      color: rgb(178, 168, 120);
+      text-align: center;
+      line-height: 50px;
+      cursor: pointer;
+      z-index: 999;
+    }
+
+    .fuhaoL {
+      position: relative;
+      top: 100px;
+      margin-right: 20px;
+    }
+
+    .fuhaoR {
+      position: relative;
+      margin-left: 20px;
+      top: 100px;
+    }
+  }
 
   .cardBox {
     display: flex;
     position: relative;
-    justify-content: space-around;
-    top: 280px;
+    /* justify-content: space-around; */
+    top: 160px;
     width: 1700px;
-    margin: 0 auto;
+    overflow-x: scroll;
+    z-index: 99;
+    /* margin-left: 80px; */
 
     .cardItem {
-      width: 253px;
-      height: 325px;
-      background: #828282;
+      position: relative;
+      min-width: 253px;
+      height: 400px;
+      margin: 20px;
+      /* background: #828282; */
+      margin-right: 10px;
       border-radius: 11px 11px 11px 11px;
       opacity: 1;
+      transition: transform 0.3s;
+
+      .img {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 253px;
+        /* 图片宽度填充整个容器 */
+        height: 325px;
+        /* 图片高度填充整个容器 */
+        z-index: 1;
+        /* 将图片放置在盒子上面 */
+      }
+
+      .img:hover {
+        cursor: pointer;
+      }
+    }
+
+    .active {
+      z-index: 9;
+      filter: brightness(120%);
+      transform: scale(1.3);
+    }
+
+    .blure {
+      filter: blur(10px);
     }
   }
 
@@ -27,7 +91,12 @@
     display: block;
     margin: 0 auto;
     position: relative;
-    top: 350px;
+    top: 200px;
+  }
+
+  .img:hover {
+    cursor: pointer;
+    filter: brightness(150%);
   }
 
   .bottomBtn {
@@ -41,5 +110,13 @@
       width: 172.65px;
       height: 50.29px;
     }
+
+    .img:hover {
+      cursor: pointer;
+    }
+  }
+
+  ::-webkit-scrollbar {
+    height: 0.5px !important
   }
 }
