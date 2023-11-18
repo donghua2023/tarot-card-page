@@ -1,6 +1,15 @@
 .two {
   width: 1920px;
   height: 100vh;
-  background: url('../img/two/boxBg.png') left 96px top 60px no-repeat;
-  background-size: 1493px 850px;
+
+  /* background: url('../img/two/boxBg.png') left 96px top 60px no-repeat;
+  background-size: 1493px 850px; */
+  .img {
+    display: block;
+    position: absolute;
+    left: 96px;
+    top: 60px;
+    width: 1493px;
+    height: 850px;
+  }
 }
