@@ -50,40 +50,40 @@ import { useRouter } from "vue-router";
 import useNavBarStore from "@/store/navBar.js";
 
 const imgList = ref([
-  "/src/assets/img/four/card.png",
-  "/src/assets/img/four/card.png",
-  "/src/assets/img/four/card.png",
-  "/src/assets/img/four/card.png",
-  "/src/assets/img/four/card.png",
-  "/src/assets/img/four/card.png",
-  "/src/assets/img/four/card.png",
-  "/src/assets/img/four/card.png",
-  "/src/assets/img/four/card.png",
-  "/src/assets/img/four/card.png",
-  "/src/assets/img/four/card.png",
-  "/src/assets/img/four/card.png",
-  "/src/assets/img/four/card.png",
-  "/src/assets/img/four/card.png",
-  "/src/assets/img/four/card.png",
-  "/src/assets/img/four/card.png",
-  "/src/assets/img/four/card.png",
-  "/src/assets/img/four/card.png",
-  "/src/assets/img/four/card.png",
-  "/src/assets/img/four/card.png",
-  "/src/assets/img/four/card.png",
-  "/src/assets/img/four/card.png",
-  "/src/assets/img/four/card.png",
-  "/src/assets/img/four/card.png",
-  "/src/assets/img/four/card.png",
-  "/src/assets/img/four/card.png",
-  "/src/assets/img/four/card.png",
-  "/src/assets/img/four/card.png",
-  "/src/assets/img/four/card.png",
-  "/src/assets/img/four/card.png",
-  "/src/assets/img/four/card.png",
-  "/src/assets/img/four/card.png",
-  "/src/assets/img/four/card.png",
-  "/src/assets/img/four/card.png",
+  "card",
+  "card",
+  "card",
+  "card",
+  "card",
+  "card",
+  "card",
+  "card",
+  "card",
+  "card",
+  "card",
+  "card",
+  "card",
+  "card",
+  "card",
+  "card",
+  "card",
+  "card",
+  "card",
+  "card",
+  "card",
+  "card",
+  "card",
+  "card",
+  "card",
+  "card",
+  "card",
+  "card",
+  "card",
+  "card",
+  "card",
+  "card",
+  "card",
+  "card",
 ]);
 
 import navBar from "@/components/navBar/navBar.vue";
@@ -103,7 +103,7 @@ const contentClick = () => {
 };
 
 function getImageUrl(name) {
-  return new URL(`${name}`, import.meta.url).href;
+  return new URL(`../assets/img/four/${name}.png`, import.meta.url).href;
 }
 const leftClick = () => {
   const img = imgList.value.pop();
