@@ -1,7 +1,7 @@
 <template>
   <div class="container">
     <img src="@/assets/img/hudie.png" alt="蝴蝶" class="img" @mouseover="flapWings" @mouseout="stopFlapping" @click="imgClick" ref="butterflyRef">
-    <img src="@/assets/img/text.png" alt="文字" class="textImg">
+    <img :src="thatImg" alt="文字" class="textImg" @mouseenter="changeImage" @mouseleave="resetImage">
   </div>
 </template>
 
@@ -27,6 +27,17 @@ const imgClick = () => {
   butterfly.style.transition = "top 1.5s";
   butterfly.style.top = "-150px";
   router.push('/index')
+}
+function getImageUrl(name) {
+  return new URL(`${name}`, import.meta.url).href;
+}
+const thatImg = ref('')
+thatImg.value = getImageUrl('../assets/img/text.png')
+const changeImage = ()=> {
+  thatImg.value = getImageUrl('../assets/img/textLight.png')
+}
+const resetImage = ()=> {
+  thatImg.value = getImageUrl('../assets/img/text.png')
 }
 
 
