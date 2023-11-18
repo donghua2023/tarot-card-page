@@ -10,15 +10,18 @@ import {ref} from 'vue'
 const butterflyRef = ref();
 
 import { useRouter } from 'vue-router';
-
+const thatImg = ref('')
+thatImg.value = getImageUrl('../assets/img/text.png')
 const flapWings = () => {
   const butterfly = document.querySelector('.img');
   butterfly.style.transform = 'scaleX(-1)';
   butterfly.style.transform = 'scaleX(0.4)';
+  thatImg.value = getImageUrl('../assets/img/textLight.png')
 }
 const stopFlapping = ()=> {
   const butterfly = document.querySelector('.img');
   butterfly.style.transform = 'scaleX(1)';
+  thatImg.value = getImageUrl('../assets/img/text.png')
 }
 
 const router = useRouter()
@@ -31,8 +34,7 @@ const imgClick = () => {
 function getImageUrl(name) {
   return new URL(`${name}`, import.meta.url).href;
 }
-const thatImg = ref('')
-thatImg.value = getImageUrl('../assets/img/text.png')
+
 const changeImage = ()=> {
   thatImg.value = getImageUrl('../assets/img/textLight.png')
 }
