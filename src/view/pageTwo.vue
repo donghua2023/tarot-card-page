@@ -30,9 +30,9 @@ onMounted(() => {
     scale: 1.0,
     highlightColor: "#393535",
     midtoneColor: "#391612",
-    lowlightColor: "#326281",
+    lowlightColor: "#32628o",
     baseColor: "#1e0a0a",
-    speed: 1,
+    speed: 3,
     blurFactor: 0.6,
     zoom: 1,
   });
